@@ -8,8 +8,9 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: 600px;
     height: auto;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     position: relative;
