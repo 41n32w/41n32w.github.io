@@ -1,7 +1,10 @@
-body {
-    background-image: url('images/Capture.PNG');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    image-rendering: crisp-edges;
+.pixelated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    object-fit: cover; 
+    image-rendering: pixelated; 
+    z-index: -1; 
 }
