@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url('images/Capture.PNG');
     background-size: cover;
@@ -8,11 +13,8 @@ body {
 }
 
 .logo {
-    width: 600px;
-    height: auto;
-    max-width: 100%;
+    width: 200px; /* Resize the image */
+    height: auto; /* Keep aspect ratio */
     display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
+    margin: 0 auto; /* Center horizontally */
 }
