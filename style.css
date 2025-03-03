@@ -13,10 +13,8 @@ body {
 }
 
 .logo {
-    width: 500px;
+    width: 500px; 
     height: auto; 
     display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
