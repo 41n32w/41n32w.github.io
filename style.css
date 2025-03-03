@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-    width: 200px; /* Resize the image */
+    width: 300px; /* Resize the image */
     height: auto; /* Keep aspect ratio */
     display: block;
     margin: 0 auto; /* Center horizontally */
