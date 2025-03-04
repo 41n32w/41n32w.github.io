@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+audio{
+    display: none;
+}
+
 body{
     background-image: url('images/1.jpg');
     background-repeat: no-repeat;
