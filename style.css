@@ -13,7 +13,8 @@ body{
 }
 
 .overlay{
+    -webkit-user-drag: none;
     pointer-events: none;
-    position: absolute;
-    size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
