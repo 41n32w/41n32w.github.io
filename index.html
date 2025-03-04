@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<audio id="bye" loop>  
+<audio id="bye" loop>
     <source src="audio/bye.wav" type="audio/wav">
 </audio>
 
 <script>
-    document.addEventListener("click", function() {
-        localStorage.setItem("audioAllowed", "true");
+    document.addEventListener("click", function () {
         let audio = document.getElementById("bye");
-        audio.play();
-    }, {once: true });
+        audio.play().then(() => {
+            localStorage.setItem("audioAllowed", "true");
+        }).catch(error => console.log("Autoplay blocked:", error));
+    }, { once: true });
 
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
+        let audio = document.getElementById("bye");
+
         if (localStorage.getItem("audioAllowed") === "true") {
-            let audio = document.getElementById("bye");
-            audio.play();
+            let playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => console.log("Autoplay blocked on load:", error));
+            }
         }
-    })
+    });
 </script>
+
 
 <body>
     <link rel="preload" as="image" href="images/meatborder.png">
