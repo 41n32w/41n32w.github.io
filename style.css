@@ -1,8 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; 
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+}
+
+.overlay{
+    -webkit-user-drag: none;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    object-fit: fill;
 }
 
 body{
@@ -15,15 +28,14 @@ body{
     overflow-y:scroll;
 }
 
-.overlay{
-    -webkit-user-drag: none;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+.panel{
     width: 100vw;
     height: 100vh;
-    object-fit: fill;
+}
+
+.second-panel{
+    background: url('images/2.png') no-repeat center center;
+    background-size: cover;
 }
 
 .logo{
