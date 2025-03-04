@@ -18,16 +18,6 @@
     object-fit: fill;
 }
 
-body{
-    background-image: url('images/1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-
-    height: 200vh;
-    overflow-y:scroll;
-}
-
 .panel{
     width: 100vw;
     height: 100vh;
@@ -36,6 +26,16 @@ body{
 .second-panel{
     background: url('images/2.png') no-repeat center center;
     background-size: cover;
+}
+
+body{
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    height: 200vh;
+    overflow-y:scroll;
 }
 
 .logo{
