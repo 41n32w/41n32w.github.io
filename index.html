@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<audio id="bye" autoplay loop muted>  
+<audio id="bye" loop>  
     <source src="audio/bye.wav" type="audio/wav">
 </audio>
 
 <script>
-    setTimeout(() => {
+    document.addEventListener("click", function() {
         let audio = document.getElementById("bye");
-        audio.muted = false;
-    }, 1000);
+        if (audio.paused) {
+            audio.play().catch(error => console.log("Autoplay blocked:", error));
+        }
+    }, {once: true });
 </script>
-
-
 
 <body>
     <link rel="preload" as="image" href="images/meatborder.png">
