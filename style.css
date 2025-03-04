@@ -30,7 +30,7 @@
 .second-panel {
     background: url('images/2.png') no-repeat center center;
     background-size: cover;
-    height: 50vh;
+    height: 100vh;
 }
 
 body {
@@ -48,6 +48,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 40px;
-    width: 250px;
+    width: 450px;
     height: auto;
 }
