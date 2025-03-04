@@ -39,6 +39,9 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     height: 200vh;  
+    justify-content: center;
+    display: flex;
+    align-items: center;
     overflow-y: scroll;  
     -ms-overflow-style: none;  
     scrollbar-width: none;  
@@ -55,13 +58,13 @@ body {
 }
 
 .navigate-btn {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 8px;
 }
 
 .navigate-btn:hover {
