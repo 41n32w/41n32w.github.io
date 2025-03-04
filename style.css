@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     background-image: url('images/1.jpg');
     background-repeat: no-repeat;
@@ -12,14 +13,13 @@ body{
     background-size: 100% 100%;
 }
 
-body{
+.overlay{
+    -webkit-user-drag: none;
+    pointer-events: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('images/meatborder.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: fill;
 }
