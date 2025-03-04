@@ -44,10 +44,6 @@ body {
     scrollbar-width: none;  
 }
 
-::-webkit-scrollbar-thumb {
-    background: transparent; 
-}
-
 .logo {
     position: absolute;
     top: 0;
