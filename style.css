@@ -22,3 +22,11 @@ body{
     height: 100vh;
     object-fit: fill;
 }
+
+.logo{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin-top: 20px; 
+}
