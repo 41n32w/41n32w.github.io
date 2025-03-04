@@ -12,3 +12,13 @@ body{
     background-size: 100% 100%;
 }
 
+.overlay{
+    -webkit-user-drag: none;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    object-fit: fill;
+}
