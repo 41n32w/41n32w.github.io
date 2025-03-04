@@ -29,6 +29,6 @@ body{
     left: 50%; 
     transform: translateX(-50%); 
     margin-top: 40px; 
-    width: 500px;
+    width: 250px;
     height: auto;
 }
