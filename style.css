@@ -16,7 +16,10 @@ body{
     -webkit-user-drag: none;
     pointer-events: none;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     object-fit: contain;
+    overflow: hidden;
 }
