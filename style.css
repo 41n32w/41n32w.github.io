@@ -23,6 +23,11 @@
     height: 100vh;
 }
 
+.first-panel{
+    background: url('images/2.png') no-repeat center center;
+    background-size: cover;
+}
+
 .second-panel{
     background: url('images/2.png') no-repeat center center;
     background-size: cover;
