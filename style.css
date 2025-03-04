@@ -6,8 +6,8 @@
 }
 
 body{
-    background-image: url('images/1.png');
+    background-image: url('images/Capture.PNG');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
 }
