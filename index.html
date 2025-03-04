@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<head>
+<body>
     <link rel="preload" as="image" href="images/meatborder2.png">
     <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
-</head>
-
-<body>
     <img src="images/meatborder2.png" alt="border" class="overlay">
     
     <div class="panel first-panel"></div>
     <div class="panel second-panel"></div>
 
     <img src="images/placeholder.png" alt="logo" class="logo">
+</body>
+
+<body>
+    <button class="navigate-btn" onclick="redirectToPage()"></button>
+
+    <script>
+        function redirectToPage() {
+            window.location.href = 'login.html';
+        }
+    </script>
 </body>
 
 
