@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<audio controls>  
+<audio id="bye" autoplay loop muted>  
     <source src="audio/bye.wav" type="audio/wav">
-Your browser does not support the audio element.
 </audio>
+
+<script>
+    setTimeout(() => {
+        let audio = document.getElementById("bye");
+        audio.muted = false;
+    }, 1000);
+</script>
+
+
 
 <body>
     <link rel="preload" as="image" href="images/meatborder.png">
