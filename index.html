@@ -14,11 +14,17 @@
 
 <script>
     document.addEventListener("click", function() {
+        localStorage.setItem("audioAllowed", "true");
         let audio = document.getElementById("bye");
-        if (audio.paused) {
-            audio.play().catch(error => console.log("Autoplay blocked:", error));
-        }
+        audio.play();
     }, {once: true });
+
+    window.addEventListener("load", function() {
+        if (localStorage.getItem("audioAllowed") === "true") {
+            let audio = document.getElementById("bye");
+            audio.play();
+        }
+    })
 </script>
 
 <body>
