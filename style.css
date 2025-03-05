@@ -32,9 +32,8 @@ html{
 }
 
 .second-panel {
-    background: url('images/2.png') no-repeat center center;
-    background-size: cover;
     height: 100vh;
+    background-color: transparent;
 }
 
 body {
