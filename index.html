@@ -18,11 +18,37 @@
 
     <img src="images/placeholder.png" alt="logo" class="logo">
 
-    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-
-    <audio id="player" autoplay loop>
+    <audio id="bye" loop>
         <source src="audio/bye.wav" type="audio/wav">
     </audio>
+
+    <script>
+        document.addEventListener("click", function () {
+            let audio = document.getElementById("bye");
+            audio.play().then(() => {
+                localStorage.setItem("audioAllowed", "true");
+            }).catch(error => console.log("Autoplay blocked:", error));
+        }, { once: true });
+
+        window.addEventListener("load", function () {
+            let audio = document.getElementById("bye");
+
+            if (localStorage.getItem("audioAllowed") === "true") {
+                let playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => console.log("Autoplay blocked on load:", error));
+                }
+            }
+        });
+    </script>
+
+    <button type="button">
+        <img src="images/arrow.png" alt="arrow">
+    </button>
+
+    
+
+
 
 </body>
 </html>
