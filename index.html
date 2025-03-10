@@ -8,39 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link rel="preload" as="image" href="images/meatborder2.png">
-    <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
-
-    <img src="images/meatborder2.png" alt="border" class="overlay">
-
-    <div class="panel first-panel"></div>
-    <div class="panel second-panel"></div>
-
-    <img src="images/placeholder.png" alt="logo" class="logo">
-
-    <audio id="bye" loop>
-        <source src="audio/bye.wav" type="audio/wav">
-    </audio>
-
-    <script>
-        document.addEventListener("click", function () {
-            let audio = document.getElementById("bye");
-            audio.play().then(() => {
-                localStorage.setItem("audioAllowed", "true");
-            }).catch(error => console.log("Autoplay blocked:", error));
-        }, { once: true });
-
-        window.addEventListener("load", function () {
-            let audio = document.getElementById("bye");
-
-            if (localStorage.getItem("audioAllowed") === "true") {
-                let playPromise = audio.play();
-                if (playPromise !== undefined) {
-                    playPromise.catch(error => console.log("Autoplay blocked on load:", error));
-                }
-            }
-        });
-    </script>
 
     <button id="arrow">
         <img src="images/arrowhover.png" alt="arrow" width="100">

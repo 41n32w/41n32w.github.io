@@ -7,58 +7,8 @@
     scrollbar-width: none;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-.overlay {
-    -webkit-user-drag: none;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;
-    object-fit: fill;
-}
-
-.panel {
-    width: 100vw;
-}
-
-.first-panel {
-    height: 100vh;
-    background-color: transparent;
-}
-
-.second-panel {
-    height: 100vh;
-    background-color: transparent;
-}
-
 body {
-    background-image: url('images/1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    height: 200vh;  
-    justify-content: center;
-    align-items: center;
-
-    overflow-y: scroll;  
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-}
-
-.logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 80px;
-    width: 450px;
-    height: auto;
+    background-color: black;
 }
 
 #arrow {
